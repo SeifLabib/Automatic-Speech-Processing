@@ -49,14 +49,14 @@ def speech_signal_observation(
         window = data[loc : loc + frame_size]
         energy[i] = np.dot(window.T, window)
 
-    log_energy = 10 * np.log10(energy)
+    log_energy = 10 * np.log10(energy + 10e-3)
     log_energy_norm = log_energy - np.mean(log_energy)
 
     axs[1].set_title("Short-time energy plot of the above utterance")
     axs[1].set_xlabel("Time in terms of frames")
     axs[1].set_ylabel("Log energy")
     axs[1].set_xlim(0, len(log_energy_norm))
-    axs[1].set_ylim(0, max(log_energy_norm))
+    axs[1].set_ylim(0, max(log_energy) + 5)
     axs[1].plot(log_energy_norm, ".")
 
     return data
