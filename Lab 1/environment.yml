@@ -1,0 +1,10 @@
+name: speech_processing
+dependencies:
+  - python=3.8
+  - jupyter
+  - librosa
+  - matplotlib
+  - numpy
+  - scipy
+channels:
+  - conda-forge
