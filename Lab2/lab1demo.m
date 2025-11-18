@@ -6,7 +6,7 @@
 %
 
 clear all; close all;
-colordef none;
+%colordef none;
 clc; echo on;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

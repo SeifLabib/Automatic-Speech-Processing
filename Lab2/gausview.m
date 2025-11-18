@@ -24,7 +24,7 @@ else,
   fig = figure('name',title);
 end;
 
-colordef none;
+%colordef none;
 
 % Make plots
 set(gca,'xlim', [rangeX(1) rangeX(end)], ...
