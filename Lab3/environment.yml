@@ -1,0 +1,10 @@
+name: hmm_lab
+dependencies:
+  - python=3.8
+  - jupyter
+  - matplotlib
+  - numpy
+  - python-graphviz
+  - scipy
+channels:
+  - conda-forge
